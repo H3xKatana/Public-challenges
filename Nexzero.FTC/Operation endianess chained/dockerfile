@@ -1,0 +1,23 @@
+FROM python:3.10-alpine
+
+# Update package index and install socat
+RUN apk update && apk add socat
+
+# Create user "ctf" without a home directory
+RUN adduser --disabled-password --no-create-home ctf
+
+# Copy challenge files into the container
+COPY challenge /usr/src/app/
+
+# Set the working directory to the challenge directory
+WORKDIR /usr/src/app
+
+# Ensure scripts are executable
+RUN chmod +x ./entrypoint.sh
+RUN chmod +x ./chall.py
+
+# Expose the challenge port
+EXPOSE 1337
+
+# Set the entrypoint script
+ENTRYPOINT ["./entrypoint.sh"]

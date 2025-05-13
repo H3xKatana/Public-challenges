@@ -1,0 +1,32 @@
+# chall.yml - Challenge configuration file for an adaptive custom hash cracking challenge
+
+name: "NEX hash"
+author: "0xkatana"
+author_link: null
+category: crypto
+difficulty: easy
+description: 
+  our team was devoloping a hash function but we forgort the password to acess the main server all we have left 
+  is the password hash with nex hash algorithm
+  Target Hash => `f903467a43c75b9f`
+
+  Your task is to find the password 
+
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+version: "0.1"
+
+flags:
+  - "nexus{next_time}"
+
+state : visible
+
+files:
+  - "challenge/nex.pdf"  
+

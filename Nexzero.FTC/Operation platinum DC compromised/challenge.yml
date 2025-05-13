@@ -1,0 +1,36 @@
+name: "Operation Platinum : DC compromised"
+author: "0xkatana"
+author_link: null
+category: forensics
+difficulty: hard
+description: |
+  Our main Domain Controller was compromised by an anonymous group. This group contacted us and mentioned they left a message to proof their stand on our DC. 
+
+  As a SOC member, your task is to:
+  
+  
+  . Analyze what they did within our network.
+  . the attacker left an image as a proof that he was able to get acess to our DC.
+  . Provide the corresponding MITRE ATT&CK technique ID for their actions on the DC.
+
+  Submit your findings in the following format:
+  `nexus{attacker-ip:attackerlogintimestamp-in-UTC:compromised_user:password_technique-id_last-word-from-the-image}`
+  Example nexus{10.0.0.10_2024-11-11_07:54:43_jotaro:star_T1040.004_ZaWarudo}
+
+category: forensics
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 10
+  minimum: 50
+version: "0.1"
+
+flags:
+  - "nexus{192.168.183.50_2024-11-30_10:54:43_brando:Playerskillzpwn14_T1003.003_PWN3D}"
+state: visible
+
+files:
+  - "challenge/chall.pcapng"
+
+

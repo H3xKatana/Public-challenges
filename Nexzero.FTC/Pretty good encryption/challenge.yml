@@ -1,0 +1,29 @@
+
+name: "Pretty Good Encryption"
+author: "0xkatana"
+author_link: null
+category: Crypto
+difficulty: easy
+description: 
+    "You have intercepted a message from a shady organization. Can you decrypt it?"
+
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 10
+  minimum: 50
+version: "0.1"
+
+
+flags:
+  - "nexus{PGP_4nd_RSA_are_1337!}"
+
+state : visible
+
+files:
+  - "chall/chall.py"
+  - "chall/flag_enc"
+  - "chall/message.txt.asc"
+  - "chall/public_key.asc"  

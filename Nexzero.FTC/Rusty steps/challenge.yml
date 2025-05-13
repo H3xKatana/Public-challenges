@@ -1,0 +1,25 @@
+
+name: "Rusty Steps"
+author: "0xkatana"
+author_link: null
+category: reverse
+difficulty: easy
+description: 
+    "Even the White House has stated that Rust is superior to C and C++."
+
+flags:
+  - "nexus{RusT_R3v_15_Fun_Right}"
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+
+version: "0.1"
+state : visible
+
+files:
+  - "challenge/rusty_steps"
+    

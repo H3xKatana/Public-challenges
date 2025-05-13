@@ -1,0 +1,34 @@
+
+name: "Operation Endianness: Chained "
+author: "0xkatana"
+author_link: null
+category: forensics
+difficulty: medium
+
+description: 
+    some suspicious behavoir has been detected by out SIEM system the activity was detected on one of our development servers.
+    
+    - a new ssh key has been detected from unknown sources suggesting a backdoor shell
+    - All logs have been deleted and some tampred timestamps have been detected
+    - Some suspicoues GitHub activity has been detected after analyzing latest commits
+
+    file ==> https://drive.google.com/file/d/1bNitFvlwMIF6ZqchTW9lCTEPOQTKl9Ew/view?usp=sharing
+
+connection_info: nc [domain] 4777 
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+version: "0.1"
+
+
+flags:
+  - nexus{op3r4tion_3nd1aness_initialized_through_5upply_chain!!}
+
+state : visible
+
+
+

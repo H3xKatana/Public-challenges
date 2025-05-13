@@ -1,0 +1,30 @@
+
+name: "White Mamba"
+author: "0xkatana"
+author_link: null
+category: malware
+difficulty: hard
+description: |
+  Read the pdf file for more details . 
+  password :  infected
+  > ![NOTE] : This is a real malware sample and must be run in a controlled environment.
+  > ![NOTE] : Please don't run this in your local machine or any production environment, it could leak sensitive information.
+  **Author** : 0xkatana
+flags:
+  - nexus{T3legramC2_Pyth0n_4nd_P0wer5hell_With_C_m4ke_1337_Malware}
+
+
+tags:
+  - malware
+
+
+files:
+  - ./challenge/chall.zip
+  - 
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+version: "0.1"
