@@ -50,7 +50,7 @@ We were supplied a full network capture (PCAP) of the victim environment. By loa
    - wordlist : rockyou
    - Recovered password: **Playerskillzpwn14**
 
-![cracked password](https://github.com/n3xusss/Nexzero.FTC/blob/main/forensics/Operation%20platinum%20DC%20compromised/solution/1.png)
+![cracked password](https://github.com/H3xKatana/Public-challenges/blob/main/Nexzero.FTC/Operation%20platinum%20DC%20compromised/solution/1.png)
 
 ### 4. Decrypting WinRM Sessions
 
@@ -77,7 +77,7 @@ Windows Remote Management allows file transfers in base64 format across multiple
 - Used CyberChef to reconstruct image segments
 - Found evidence of attacker searching for `cat.png`
 
-![cat](https://github.com/n3xusss/Nexzero.FTC/blob/main/forensics/Operation%20platinum%20DC%20compromised/solution/2.png)
+![cat](https://github.com/H3xKatana/Public-challenges/blob/main/Nexzero.FTC/Operation%20platinum%20DC%20compromised/solution/2.png)
 
 ## Flag
 
